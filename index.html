@@ -65,19 +65,31 @@
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
-        
-   
     }
+    
+
     
     .headermid{
         position: absolute;
         top: 20%;
         transform: translateY(-50%);
         left: 50%;
-        transform: translateX(-50%);
-
+        transform: translateX(-50%);    
+    }
+    
+        .headermid img{
+        width: 500px;
+    }
+    
+    @media (max-width:500px){
+        
+        .headermid img{
+            width: 300px !important;
+            
+        }
         
     }
+    
     
     .circle{
         background-image: url('cross--01.svg');
@@ -154,6 +166,19 @@ iframe{
         
     }
     
+    footer p{
+        margin: 0px;
+        text-align: left;
+        font-size: 13px;
+    }
+    
+    @media(max-width:600px){
+        
+        footer p{
+            text-align: center;
+        }
+    }
+    
 </style>
 
 <script
@@ -169,7 +194,7 @@ iframe{
 <div class="w3-top">
   <div class="w3-bar  w3-card w3-left-align w3-large" style=" background-color: rgba(190, 190, 190, 0.3); z-index: 9999;">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu" style="background-color: #a7233a;"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">經濟民主連合</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">經濟民主連合</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
@@ -217,13 +242,13 @@ iframe{
 </div>
 </header>
 
-  <div class="headermid w3-center" >
+  <div class="headermid" >
 
-  <h1 class="w3-animate-top">我的蘋果個資不許賣！</h1>
+<img src="titlep.png" class="w3-animate-top" alt="蘋果個資不許賣">
   
  
   <a href="#form1">
-  <button class=' animoBubble1 w3-padding-large w3-large w3-margin-top'>我要連署</button></a>
+  <button class=' animoBubble1 w3-padding-large w3-large w3-margin-top w3-animate-top'>我要連署</button></a>
 </div>
 
 <!--MARQUEE-->
@@ -238,7 +263,7 @@ iframe{
 <div class="circle">
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
-    <div class="w3-twothird">
+    <div class="w3-twothird ">
       <h1>我的蘋果個資不許賣！</h1>
       <h5 class="w3-padding-32">從2003年以來，蘋果日報在台灣經歷了19個年頭，如果加計蘋果日報資料室保管的壹週刊資料，則長達 21年。21年來，蘋果日報與壹週刊紀錄了台灣人物的大小事：有高官巨富、影視名人、也有升斗小民，有公開活動、匿名爆料、也有走在法律邊緣的狗仔跟拍，有生活瑣事、醫療與性隱私，也有國安密帳；資料庫中有已公開的資料，更有未公開的私密資料。去年已辭任的蘋果日報台灣分公司經理葉一堅6月8日宣布「蘋果新聞網」要轉讓給新東家，員工隨同公司資產(含資料庫)會移轉至新公司。</h5>
 
@@ -261,7 +286,7 @@ iframe{
     </div>
 
     <div class="w3-twothird">
-      <h1>Lorem Ipsum</h1>
+      <h2>Lorem Ipsum</h2>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
       <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -288,21 +313,40 @@ iframe{
 
 
 <!-- Footer -->
-<footer class="w3-row w3-padding-64 w3-center  w3-opacity "> 
-<div class="w3-container w3-half w3-padding-32" style="border-right: 1px solid #808080;" >
+<footer class="w3-row w3-padding-32 w3-center  w3-opacity "> 
+<div class="w3-content">
+
+<div class="w3-content w3-half w3-padding-32"  >
 
      <img src="logo.png" style="width: 165px;" alt="">
- </div>
-
-  <div class="w3-container w3-half w3-padding-32" style="border-left: 1px solid #808080; ">
-   <a href="https://www.facebook.com/eduniontaiwan">
-    <i class="fa fa-facebook-official w3-hover-opacity w3-padding-small" style="font-size:28px;"></i></a>
+     <div class="w3-padding-32px;">
+       <a href="https://www.facebook.com/eduniontaiwan">
+    <i class="fa fa-facebook-official w3-hover-opacity w3-padding-large" style="font-size:28px;"></i></a>
       <a href="https://www.edunion.org.tw/">
-          <i class="fa fa-home w3-hover-opacity w3-hover-opacity w3-padding-small" style="font-size:28px;"></i></a>
+          <i class="fa fa-home w3-hover-opacity w3-hover-opacity w3-padding-large" style="font-size:28px;"></i></a>
+          </div>
 
  </div>
+    
+
+    
+  <div class="w3-container w3-half " style="border-left: 1px solid #808080; ">
+<p>聯絡信箱：contact@edunion.org.tw</p>
+<p>郵寄地址：100009 台北市中正區北平東路28號9樓之1</p>
+<p>聯絡電話：（02）2395－2552 </p>
+<p>一般傳真：（02）2395－7622 </p>
+<p>捐款財務傳真：（02）2369－0318</p>
+<p>捐款財務信箱：finance@edunion.org.tw </p>
+<p>保密申訴信箱：secret@edunion.org.tw</p>
+<p>媒體聯絡電話：0937-169-222（盧主任）</p>
  
+ </div>
+</div>
 </footer>
+
+<div style="background-color: #ededed; padding: 24px 0px;">
+    <p style="margin: 0px; text-align: center;">2022©經濟民主連合</p>
+</div>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
